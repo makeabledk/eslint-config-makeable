@@ -12,7 +12,7 @@ https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
 ## Installation
 
-Put devDependencies og script fra package.json ind i projektets package.json og kør npm install. Hvis stien i scriptet ```lint:fix``` ikke stemmer overens med stien til dine filer, ændres denne.
+Put devDependencies og script fra package.json ind i projektets package.json og kør npm install. Hvis stierne i vores package.json scripts ikke stemmer overens med stien til dine filer, ændres disse.
 
 Har du installeret Prettier-udvidelsen til vscode, afkommenteres den sidste linje i settings.json-filen i .vscode-mappen.
 

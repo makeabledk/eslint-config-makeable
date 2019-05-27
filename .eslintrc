@@ -29,8 +29,9 @@
     "no-alert": 0,
     "max-len": 0,
     "no-await-in-loop": 0,
+    "no-use-before-define": 0,
+    "no-restricted-syntax": 1,
     "spaced-comment": 1,
-    "no-use-before-define": 1,
     "no-unused-vars": [
       1, {
         "ignoreSiblings": true,
