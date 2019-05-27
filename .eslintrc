@@ -11,7 +11,7 @@
       "error",
       {
         "trailingComma": "es5",
-        "printWidth": 150,
+        "printWidth": 210,
         "tabWidth": 4,
         "singleQuote": true,
         "semi": true,
