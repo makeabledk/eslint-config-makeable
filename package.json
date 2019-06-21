@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-makeable",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "ESlint config for Makeable's Typescript projects",
   "keywords": [
     "javascript",
@@ -12,22 +12,24 @@
     "prettier"
   ],
   "main": "index.js",
-  "author": "Lase Borgen <lasse@makeable.dk>",
+  "author": "Lasse Borgen <lasse@makeable.dk>",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
-    "eslint-plugin-import": "^2.17.2",
     "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.13.0",
-    "prettier": "^1.17.0",
-    "@typescript-eslint/parser": "^1.7.0",
-    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "prettier": "^1.17.0"
+  },
+  "peerDependencies": {
     "typescript": "^3.1.6"
   },
   "scripts": {
-    "lint": "eslint ./src/*.ts",
-    "lint:fix": "eslint ./src/*.ts --fix"
+    "lint": "eslint ./**/*.ts",
+    "lint:fix": "eslint ./**/*.ts --fix"
   }
 }

@@ -25,6 +25,5 @@
     "[typescriptreact]": {
         "editor.formatOnSave": false,
     },
-    //Hvis man også har installeret en prettier-extension til VSCode
-    //"prettier.disableLanguages": ["javascript", "typescript"] 
+    "prettier.disableLanguages": ["javascript", "typescript"]
 }
