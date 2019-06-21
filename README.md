@@ -26,6 +26,16 @@ Copy the following scripts into your package.json-file:
 }
 ```
 
+Copy the following setting into your package.json-file:
+
+```
+"eslintConfig": {
+    "extends": [
+        "eslint-config-makeable"
+    ]
+},
+```
+
 Copy the .vscode folder from the newly installed node-module to the root of your directory to avoid auto-formatting conflicts with other services like prettier-extension, typescript and vscode auto-formatting.
 
 ## Usage
