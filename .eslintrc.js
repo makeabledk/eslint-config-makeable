@@ -1,4 +1,4 @@
-{
+module.exports = {
   "extends": ["airbnb", "prettier"],
   "parser": "@typescript-eslint/parser",
   "plugins": ["prettier"],
@@ -30,7 +30,7 @@
     "max-len": 0,
     "no-await-in-loop": 0,
     "no-use-before-define": 0,
-    "no-restricted-syntax": 1,
+    "no-restricted-syntax": 0,
     "spaced-comment": 1,
     "no-unused-vars": [
       1, {
