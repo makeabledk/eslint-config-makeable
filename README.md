@@ -15,7 +15,7 @@ https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint
 
 ```cd``` into the directory containing your Typescript package.json and run the following command:
 
-```npm i eslint-config-makeable --D```
+```npm i eslint-config-makeable -D```
 
 Copy the following scripts into your package.json-file:
 
