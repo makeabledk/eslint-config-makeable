@@ -31,7 +31,12 @@ module.exports = {
     "no-await-in-loop": 0,
     "no-use-before-define": 0,
     "no-restricted-syntax": 0,
+    "no-underscore-dangle": 0,
+    "no-plusplus": 0,
+    "prefer-destructuring": 0,
+    "no-param-reassign": 0,
     "spaced-comment": 1,
+    "no-case-declarations": 1,
     "no-unused-vars": [
       1, {
         "ignoreSiblings": true,
