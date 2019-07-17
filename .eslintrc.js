@@ -37,6 +37,14 @@ module.exports = {
     "no-param-reassign": 0,
     "spaced-comment": 1,
     "no-case-declarations": 1,
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true,
+        "optionalDependencies": true,
+        "peerDependencies": true
+      }
+    ],
     "no-unused-vars": [
       1, {
         "ignoreSiblings": true,
