@@ -21,8 +21,8 @@ Copy the following scripts into your package.json-file:
 
 ```
 "scripts": {
-    "lint": "eslint ./**/*.ts",
-    "lint:fix": "eslint ./**/*.ts --fix"
+    "lint": "eslint --ext .ts src/",
+    "lint:fix": "eslint --fix --ext .ts src/",
 }
 ```
 

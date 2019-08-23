@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-makeable",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "ESlint config for Makeable's Typescript projects",
   "keywords": [
     "javascript",
@@ -29,7 +29,7 @@
     "typescript": "^3.1.6"
   },
   "scripts": {
-    "lint": "eslint ./**/*.ts",
-    "lint:fix": "eslint ./**/*.ts --fix"
+    "lint": "eslint --ext .ts src/",
+    "lint:fix": "eslint --fix --ext .ts src/"
   }
 }
