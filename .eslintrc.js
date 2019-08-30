@@ -1,8 +1,8 @@
 module.exports = {
-  "extends": ["airbnb", "prettier"],
-  "parser": "@typescript-eslint/parser",
+  "extends": ["airbnb", "prettier", 'plugin:vue/recommended'],
   "plugins": ["prettier"],
   "parserOptions": {
+    "parser": "@typescript-eslint/parser",
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
@@ -60,6 +60,8 @@ module.exports = {
     "import/newline-after-import": 1,
     "import/first": 1,
     "camelcase": 1,
-    "prefer-const": 1
+    "prefer-const": 1,
+    "vue/html-indent": 0,
+    "vue/max-attributes-per-line": 0
   }
 }
