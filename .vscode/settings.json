@@ -29,5 +29,8 @@
     "[typescriptreact]": {
         "editor.formatOnSave": false,
     },
+    "[vue]": {
+        "editor.formatOnSave": false,
+    },
     "prettier.disableLanguages": ["javascript", "typescript"]
 }

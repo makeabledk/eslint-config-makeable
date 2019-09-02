@@ -62,6 +62,7 @@ module.exports = {
     "camelcase": 1,
     "prefer-const": 1,
     "vue/html-indent": 0,
-    "vue/max-attributes-per-line": 0
+    "vue/max-attributes-per-line": 0,
+    "vue/html-self-closing": 0
   }
 }
