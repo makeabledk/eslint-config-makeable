@@ -39,6 +39,7 @@ module.exports = {
     "no-plusplus": 0,
     "prefer-destructuring": 0,
     "no-param-reassign": 0,
+    "import/extensions": 0,
     "spaced-comment": 1,
     "no-case-declarations": 1,
     "import/no-extraneous-dependencies": [
@@ -61,6 +62,9 @@ module.exports = {
     "import/first": 1,
     "camelcase": 1,
     "prefer-const": 1,
+    "import/no-dynamic-require": 1,
+    "guard-for-in": 1,
+    "vue/singleline-html-element-content-newline": 0,
     "vue/html-indent": 0,
     "vue/max-attributes-per-line": 0,
     "vue/html-self-closing": 0
