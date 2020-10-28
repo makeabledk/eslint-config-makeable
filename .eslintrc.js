@@ -51,10 +51,11 @@ module.exports = {
       }
     ],
     "no-unused-vars": [
-      1, {
-        "ignoreSiblings": true,
-        "argsIgnorePattern": "context|res|next|error|e"
-      }
+      1,
+      {
+        ignoreRestSiblings: true,
+        argsIgnorePattern: 'res|next|^err',
+      },
     ],
     "consistent-return": 1,
     "no-multiple-empty-lines": 1,
