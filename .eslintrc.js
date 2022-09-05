@@ -9,7 +9,7 @@ module.exports = {
   "env": {
     "browser": true,
     "node": true
-  },                                                                      
+  },
   "rules": {
     "prettier/prettier": [
       "error",
@@ -53,8 +53,8 @@ module.exports = {
     "no-unused-vars": [
       1,
       {
-        ignoreRestSiblings: true,
-        argsIgnorePattern: 'res|next|^err',
+        "ignoreRestSiblings": true,
+        "argsIgnorePattern": 'res|next|^err',
       },
     ],
     "consistent-return": 1,
