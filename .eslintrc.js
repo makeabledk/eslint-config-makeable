@@ -65,9 +65,11 @@ module.exports = {
     "prefer-const": 1,
     "import/no-dynamic-require": 1,
     "guard-for-in": 1,
+    "vue/valid-template-root": 1,
     "vue/singleline-html-element-content-newline": 0,
     "vue/html-indent": 0,
     "vue/max-attributes-per-line": 0,
-    "vue/html-self-closing": 0
+    "vue/html-self-closing": 0,
+    "vue/valid-v-model": 0,
   }
 }
