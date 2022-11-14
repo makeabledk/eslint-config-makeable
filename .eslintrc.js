@@ -66,10 +66,14 @@ module.exports = {
     "import/no-dynamic-require": 1,
     "guard-for-in": 1,
     "vue/valid-template-root": 1,
+    "arrow-body-style": 1,
+    "vue/no-reserved-component-names": 1,
+    "vue/multi-word-component-names": 0,
     "vue/singleline-html-element-content-newline": 0,
     "vue/html-indent": 0,
     "vue/max-attributes-per-line": 0,
     "vue/html-self-closing": 0,
+    "vue/no-v-model-argument": 0,
     "vue/valid-v-model": 0,
   }
 }

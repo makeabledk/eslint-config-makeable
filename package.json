@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-makeable",
-  "version": "6.0.0",
+  "version": "6.1.0",
   "description": "ESlint config for Makeable's Typescript projects",
   "keywords": [
     "javascript",
