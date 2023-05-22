@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-makeable",
-  "version": "6.1.0",
+  "version": "6.2.1",
   "description": "ESlint config for Makeable's Typescript projects",
   "keywords": [
     "javascript",
@@ -27,7 +27,7 @@
     "prettier": "^2.7.1"
   },
   "peerDependencies": {
-    "typescript": "^4.5.0"
+    "typescript": "*"
   },
   "scripts": {
     "lint": "eslint --ext .ts,.js,.vue src/",
