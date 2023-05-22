@@ -1,5 +1,11 @@
 module.exports = {
-  "extends": ["airbnb", "prettier", 'plugin:vue/recommended'],
+  "globals": {
+    "defineProps": "readonly",
+    "defineEmits": "readonly",
+    "defineExpose": "readonly",
+    "withDefaults": "readonly"
+  },
+  "extends": ["airbnb", "prettier", 'plugin:vue/vue3-recommended'],
   "plugins": ["prettier"],
   "parserOptions": {
     "parser": "@typescript-eslint/parser",
@@ -12,7 +18,7 @@ module.exports = {
   },
   "rules": {
     "prettier/prettier": [
-      "error",
+      2,
       {
         "trailingComma": "es5",
         "printWidth": 210,
@@ -43,7 +49,7 @@ module.exports = {
     "spaced-comment": 1,
     "no-case-declarations": 1,
     "import/no-extraneous-dependencies": [
-      "error",
+      2,
       {
         "devDependencies": true,
         "optionalDependencies": true,
