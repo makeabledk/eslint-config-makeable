@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-makeable",
-  "version": "7.0.2",
+  "version": "8.0.0",
   "description": "ESlint config for Makeable's Typescript projects",
   "keywords": [
     "javascript",
@@ -18,13 +18,13 @@
     "@typescript-eslint/parser": "^5.59.6",
     "eslint": "^7.0.0",
     "eslint-config-airbnb": "^19.0.0",
-    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-prettier": "^4.2.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.6.0",
-    "eslint-plugin-prettier": "^4.2.0",
+    "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-vue": "^7.0.0-beta.4",
-    "prettier": "^2.8.8"
+    "prettier": "^1.18.0"
   },
   "peerDependencies": {
     "typescript": "*"
