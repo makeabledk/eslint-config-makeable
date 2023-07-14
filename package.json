@@ -27,7 +27,7 @@
     "prettier": "^2.8.8"
   },
   "peerDependencies": {
-    "typescript": "*"
+    "typescript": "^4.9.5"
   },
   "scripts": {
     "lint": "eslint --ext .ts,.js,.vue src/",
