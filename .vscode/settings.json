@@ -5,7 +5,7 @@
     },
     "eslint.alwaysShowStatus": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true
+        "source.fixAll": "always"
     },
     "prettier.enable": false
 }
