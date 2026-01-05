@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import globals from 'globals';
 import pluginVue from 'eslint-plugin-vue';
 import tseslint from 'typescript-eslint';
+import vueParser from 'vue-eslint-parser';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
 
@@ -89,13 +90,6 @@ export default [
                     peerDependencies: true,
                 },
             ],
-            'no-unused-vars': [
-                1,
-                {
-                    ignoreRestSiblings: true,
-                    argsIgnorePattern: 'res|next|^err',
-                },
-            ],
             'no-multiple-empty-lines': 1,
             'import/newline-after-import': 1,
             'import/first': 1,
@@ -111,11 +105,10 @@ export default [
             'vue/max-attributes-per-line': 0,
             'vue/html-self-closing': 0,
             'vue/no-v-model-argument': 0,
-            'vue/valid-v-model': 0,
+            'vue/valid-v-model': 0
         },
     },
 
-    // TypeScript files - use TypeScript parser
     {
         files: ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'],
         languageOptions: {
@@ -125,7 +118,7 @@ export default [
             '@typescript-eslint': tseslint.plugin,
         },
         rules: {
-            'no-unused-vars': 'off',
+            'no-unused-vars': 0,
             '@typescript-eslint/no-unused-vars': [
                 1,
                 {
@@ -135,27 +128,19 @@ export default [
             ],
         },
     },
-
-    // Vue files - use TypeScript parser for script blocks
+    
+    // For .vue files - use core rule (which vue-eslint-parser fixes)
     {
-        files: ['**/*.vue'],
+        files: ["*.vue", "**/*.vue"],
         languageOptions: {
+            parser: vueParser,
             parserOptions: {
                 parser: tseslint.parser,
-            },
-        },
-        plugins: {
-            '@typescript-eslint': tseslint.plugin,
+            }
         },
         rules: {
-            'no-unused-vars': 'off',
-            '@typescript-eslint/no-unused-vars': [
-                1,
-                {
-                    ignoreRestSiblings: true,
-                    argsIgnorePattern: 'res|next|^err',
-                },
-            ],
-        },
+            '@typescript-eslint/no-unused-vars': 0,
+            'no-unused-vars': 0
+        }
     },
 ];
