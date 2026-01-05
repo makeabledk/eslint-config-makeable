@@ -74,6 +74,11 @@ export default [
             'prefer-destructuring': 0,
             'no-param-reassign': 0,
             'import/extensions': 0,
+            'consistent-return': 0,
+            'arrow-body-style': 0,
+            'class-methods-use-this': 0,
+            'no-undef': 0,
+            'no-void': 0,
             'spaced-comment': 1,
             'no-case-declarations': 1,
             'import/no-extraneous-dependencies': [
@@ -91,7 +96,6 @@ export default [
                     argsIgnorePattern: 'res|next|^err',
                 },
             ],
-            'consistent-return': 1,
             'no-multiple-empty-lines': 1,
             'import/newline-after-import': 1,
             'import/first': 1,
@@ -100,7 +104,6 @@ export default [
             'import/no-dynamic-require': 1,
             'guard-for-in': 1,
             'vue/valid-template-root': 1,
-            'arrow-body-style': 1,
             'vue/no-reserved-component-names': 1,
             'vue/multi-word-component-names': 0,
             'vue/singleline-html-element-content-newline': 0,
@@ -118,6 +121,19 @@ export default [
         languageOptions: {
             parser: tseslint.parser,
         },
+        plugins: {
+            '@typescript-eslint': tseslint.plugin,
+        },
+        rules: {
+            'no-unused-vars': 'off',
+            '@typescript-eslint/no-unused-vars': [
+                1,
+                {
+                    ignoreRestSiblings: true,
+                    argsIgnorePattern: 'res|next|^err',
+                },
+            ],
+        },
     },
 
     // Vue files - use TypeScript parser for script blocks
@@ -127,6 +143,19 @@ export default [
             parserOptions: {
                 parser: tseslint.parser,
             },
+        },
+        plugins: {
+            '@typescript-eslint': tseslint.plugin,
+        },
+        rules: {
+            'no-unused-vars': 'off',
+            '@typescript-eslint/no-unused-vars': [
+                1,
+                {
+                    ignoreRestSiblings: true,
+                    argsIgnorePattern: 'res|next|^err',
+                },
+            ],
         },
     },
 ];
