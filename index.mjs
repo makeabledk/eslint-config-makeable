@@ -37,7 +37,7 @@ export default [
                 withDefaults: 'readonly',
             },
             parserOptions: {
-                ecmaVersion: 2018,
+                ecmaVersion: 'latest',
                 sourceType: 'module',
             },
         },
