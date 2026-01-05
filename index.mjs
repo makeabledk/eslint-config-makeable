@@ -15,17 +15,14 @@ const compat = new FlatCompat({
     baseDirectory: __dirname,
 });
 
+const tsTemplateParser = {
+    parse: (code, options) => tseslint.parser.parseForESLint(code, options).ast,
+};
+
 export default [
-    // Airbnb base rules via compatibility layer (doesn't support flat config natively)
     ...compat.extends('airbnb-base'),
-
-    // Vue 3 recommended rules
     ...pluginVue.configs['flat/recommended'],
-
-    // Prettier config (disables conflicting formatting rules) - must come after other configs
     eslintConfigPrettier,
-
-    // Main configuration
     {
         languageOptions: {
             globals: {
@@ -105,7 +102,8 @@ export default [
             'vue/max-attributes-per-line': 0,
             'vue/html-self-closing': 0,
             'vue/no-v-model-argument': 0,
-            'vue/valid-v-model': 0
+            'vue/valid-v-model': 0,
+            'vue/no-mutating-props': 0
         },
     },
 
@@ -124,18 +122,25 @@ export default [
                 {
                     ignoreRestSiblings: true,
                     argsIgnorePattern: 'res|next|^err',
+                    caughtErrors: 'none',
                 },
             ],
         },
     },
     
-    // For .vue files - use core rule (which vue-eslint-parser fixes)
     {
         files: ["*.vue", "**/*.vue"],
         languageOptions: {
             parser: vueParser,
             parserOptions: {
-                parser: tseslint.parser,
+                parser: {
+                    js: 'espree',
+                    ts: tseslint.parser,
+                    tsx: tseslint.parser,
+                    '<template>': tsTemplateParser,
+                },
+                ecmaVersion: 'latest',
+                sourceType: 'module',
             }
         },
         rules: {
