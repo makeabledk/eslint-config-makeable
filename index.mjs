@@ -78,6 +78,7 @@ export default [
             'no-undef': 0,
             'no-void': 0,
             'no-continue': 0,
+            'no-promise-executor-return': 0,
             'spaced-comment': 1,
             'no-case-declarations': 1,
             'import/no-extraneous-dependencies': [
