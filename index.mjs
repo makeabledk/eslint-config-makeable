@@ -61,6 +61,10 @@ export default [
             'no-void': 0,
             'no-continue': 0,
             'no-promise-executor-return': 0,
+            'object-curly-newline': 0,
+            'newline-per-chained-call': 0,
+            "no-spaced-func": 0,
+            "func-call-spacing": 0,
             'spaced-comment': 1,
             'no-case-declarations': 1,
             'import/no-extraneous-dependencies': [
