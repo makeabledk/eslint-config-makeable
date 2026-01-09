@@ -74,8 +74,46 @@ export default [
 ];
 ```
 
+## Biome
+
+This setup requires a `biome.js` file in the project root. It is added automatically after installing this package.
+
 Copy the .vscode folder from the newly installed node-module to the root of your directory to avoid auto-formatting conflicts with other services like prettier-extension, typescript and vscode auto-formatting.
 The auto-formatting after save only works if the .vscode folder is in the root of the directory that is open in vscode/cursor - Even if the linting is supposed to run in a subdirectory, the .vscode folder must be in the root of the directory that is open in vscode/cursor.
+
+The content for the .vscode/settings.json file is the following:
+
+```
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "biomejs.biome",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit",
+      "source.organizeImports.biome": "never"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[vue]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[json]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "[jsonc]": {
+      "editor.defaultFormatter": "biomejs.biome"
+    },
+    "eslint.validate": [
+      "javascript",
+      "typescript",
+      "vue"
+    ],
+    "biome.enabled": true
+  }
+```
 
 ## Usage
 
