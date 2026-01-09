@@ -25,7 +25,8 @@
     "eslint-plugin-vue": "^10.6.2",
     "globals": "^16.2.0",
     "typescript-eslint": "^8.33.1",
-    "vue-eslint-parser": "^10.2.0"
+    "vue-eslint-parser": "^10.2.0",
+    "@biomejs/biome": "^2.3.11"
   },
   "peerDependencies": {
     "typescript": "*"
@@ -34,8 +35,5 @@
     "postinstall": "node scripts/postinstall.js",
     "lint": "eslint src/",
     "lint:fix": "eslint --fix src/"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^2.3.11"
   }
 }
