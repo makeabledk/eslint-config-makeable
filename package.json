@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-makeable",
-  "version": "9.1.0",
+  "version": "10.0.0",
   "description": "ESlint config for Makeable's Typescript projects",
   "keywords": [
     "javascript",
@@ -9,7 +9,7 @@
     "eslint",
     "lint",
     "config",
-    "prettier"
+    "biome"
   ],
   "main": "index.mjs",
   "exports": {
@@ -21,12 +21,9 @@
     "@eslint/eslintrc": "^3.3.1",
     "eslint": "^9.39.1",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-vue": "^10.6.2",
     "globals": "^16.2.0",
-    "prettier": "^3.7.4",
     "typescript-eslint": "^8.33.1",
     "vue-eslint-parser": "^10.2.0"
   },
@@ -34,7 +31,11 @@
     "typescript": "*"
   },
   "scripts": {
+    "postinstall": "node scripts/postinstall.js",
     "lint": "eslint src/",
     "lint:fix": "eslint --fix src/"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.11"
   }
 }

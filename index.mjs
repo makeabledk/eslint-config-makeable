@@ -5,8 +5,6 @@ import globals from 'globals';
 import pluginVue from 'eslint-plugin-vue';
 import tseslint from 'typescript-eslint';
 import vueParser from 'vue-eslint-parser';
-import eslintConfigPrettier from 'eslint-config-prettier';
-import eslintPluginPrettier from 'eslint-plugin-prettier';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -22,7 +20,6 @@ const tsTemplateParser = {
 export default [
     ...compat.extends('airbnb-base'),
     ...pluginVue.configs['flat/recommended'],
-    eslintConfigPrettier,
     {
         languageOptions: {
             globals: {
@@ -39,22 +36,7 @@ export default [
                 sourceType: 'module',
             },
         },
-        plugins: {
-            prettier: eslintPluginPrettier,
-        },
         rules: {
-            'prettier/prettier': [
-                2,
-                {
-                    trailingComma: 'es5',
-                    printWidth: 210,
-                    tabWidth: 4,
-                    singleQuote: true,
-                    semi: true,
-                    bracketSpacing: true,
-                    arrowParens: 'always',
-                },
-            ],
             'no-console': 0,
             'no-empty': 0,
             indent: 0,
