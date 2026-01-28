@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-makeable",
-  "version": "10.1.1",
+  "version": "10.2.0",
   "description": "ESlint config for Makeable's Typescript projects",
   "keywords": [
     "javascript",
@@ -23,6 +23,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-vue": "^10.6.2",
+    "eslint-plugin-readable-tailwind": "^2.1.0",
     "globals": "^16.2.0",
     "typescript-eslint": "^8.33.1",
     "vue-eslint-parser": "^10.2.0",

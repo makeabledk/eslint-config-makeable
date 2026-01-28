@@ -5,6 +5,7 @@ import globals from 'globals';
 import pluginVue from 'eslint-plugin-vue';
 import tseslint from 'typescript-eslint';
 import vueParser from 'vue-eslint-parser';
+import pluginReadableTailwind from 'eslint-plugin-readable-tailwind';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -135,5 +136,14 @@ export default [
             '@typescript-eslint/no-unused-vars': 0,
             'no-unused-vars': 0
         }
+    },
+
+    {
+        plugins: {
+            'readable-tailwind': pluginReadableTailwind,
+        },
+        rules: {
+            'readable-tailwind/sort-classes': 'warn',
+        },
     },
 ];
