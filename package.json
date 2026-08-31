@@ -1,40 +1,40 @@
 {
-  "name": "eslint-config-makeable",
-  "version": "10.2.0",
-  "description": "ESlint config for Makeable's Typescript projects",
-  "keywords": [
-    "javascript",
-    "node",
-    "typescript",
-    "eslint",
-    "lint",
-    "config",
-    "biome"
-  ],
-  "main": "index.mjs",
-  "exports": {
-    ".": "./index.mjs"
-  },
-  "type": "module",
-  "author": "Lasse Borgen <lasse@makeable.dk>",
-  "dependencies": {
-    "@eslint/eslintrc": "^3.3.1",
-    "eslint": "^9.39.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.32.0",
-    "eslint-plugin-vue": "^10.6.2",
-    "eslint-plugin-readable-tailwind": "^2.1.0",
-    "globals": "^16.2.0",
-    "typescript-eslint": "^8.33.1",
-    "vue-eslint-parser": "^10.2.0",
-    "@biomejs/biome": "^2.3.11"
-  },
-  "peerDependencies": {
-    "typescript": "*"
-  },
-  "scripts": {
-    "postinstall": "node scripts/postinstall.js",
-    "lint": "eslint src/",
-    "lint:fix": "eslint --fix src/"
-  }
+	"name": "eslint-config-makeable",
+	"version": "11.0.0",
+	"description": "ESlint config for Makeable's Typescript projects",
+	"keywords": [
+		"javascript",
+		"node",
+		"typescript",
+		"eslint",
+		"lint",
+		"config",
+		"biome"
+	],
+	"main": "index.mjs",
+	"exports": {
+		".": "./index.mjs"
+	},
+	"type": "module",
+	"author": "Lasse Borgen <lasse@makeable.dk>",
+	"dependencies": {
+		"@eslint/eslintrc": "^3.3.1",
+		"eslint": "^9.39.1",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-plugin-import": "^2.32.0",
+		"eslint-plugin-vue": "^10.6.2",
+		"eslint-plugin-readable-tailwind": "^2.1.0",
+		"globals": "^16.2.0",
+		"typescript-eslint": "^8.33.1",
+		"vue-eslint-parser": "^10.2.0",
+		"@biomejs/biome": "^2.5.9"
+	},
+	"peerDependencies": {
+		"typescript": "*"
+	},
+	"scripts": {
+		"postinstall": "node scripts/postinstall.js",
+		"lint": "eslint src/",
+		"lint:fix": "eslint --fix src/"
+	}
 }

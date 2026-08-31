@@ -9,8 +9,8 @@ const biomePath = resolve(projectRoot, 'biome.json');
 
 // Your shared config
 const biomeConfig = {
-    $schema: 'https://biomejs.dev/schemas/1.9.4/schema.json',
-    organizeImports: { enabled: false },
+    $schema: './node_modules/@biomejs/biome/configuration_schema.json',
+    assist: { actions: { source: { organizeImports: 'off' } } },
     formatter: {
         enabled: true,
         indentStyle: 'space',
@@ -28,9 +28,14 @@ const biomeConfig = {
             bracketSpacing: true,
         },
     },
+    css: {
+        parser: {
+            tailwindDirectives: true,
+        },
+    },
     json: { formatter: { trailingCommas: 'none' } },
     linter: { enabled: false },
-    files: { ignore: ['node_modules', 'dist', 'build', '.nuxt', '.output'] },
+    files: { includes: ['**', '!**/node_modules', '!**/dist', '!**/build', '!**/.nuxt', '!**/.output'] },
 };
 
 // Only create if it doesn't exist (don't overwrite user customizations)

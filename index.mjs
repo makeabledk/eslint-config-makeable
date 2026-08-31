@@ -66,6 +66,8 @@ export default [
             'newline-per-chained-call': 0,
             "no-spaced-func": 0,
             "func-call-spacing": 0,
+            'implicit-arrow-linebreak': 0,
+            'function-paren-newline': 0,
             'spaced-comment': 1,
             'no-case-declarations': 1,
             'import/no-extraneous-dependencies': [
